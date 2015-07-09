@@ -86,6 +86,9 @@
                     JqplotGraphDataTablePrototype._destroyDataPointTooltip.call(this, $(this));
                 })
                 .on('jqplotClick', function (e, s, i, d) {
+                    if($(".dashboard-swd").length > 0 ){
+                        return;
+                    }
                     if (lastTick !== false && typeof self.jqplotParams.axes.xaxis.onclick != 'undefined'
                         && typeof self.jqplotParams.axes.xaxis.onclick[lastTick] == 'string') {
                         var url = self.jqplotParams.axes.xaxis.onclick[lastTick];
