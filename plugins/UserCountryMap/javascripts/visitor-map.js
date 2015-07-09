@@ -781,6 +781,9 @@
                                     return '<h3>' + data.name + '</h3>' +
                                         formatValueForTooltips(region, metric, iso);
                                 }).on('click',function (d, path, evt) {
+                                    if ($(".dashboard-swd").length > 0){
+                                        return
+                                    }
                                     var region = regionDict[regionCode(d)];
                                     if (region && region.label) {
                                         if (evt.shiftKey) {
@@ -954,6 +957,9 @@
                                     }
                                 },
                                 click: function (city, symbol, evt) {
+                                    if ($(".dashboard-swd").length > 0){
+                                        return
+                                    }
                                     if (evt.shiftKey) {
                                         addMultipleRowEvolution('getCity', city.label);
                                         symbol.path.attr('fill', citySelectedColor);
