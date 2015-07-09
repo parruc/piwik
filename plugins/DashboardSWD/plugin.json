@@ -1,0 +1,21 @@
+{
+    "name": "DashboardSWD",
+    "version": "0.1.3",
+    "description": "Page to show dashboard's widgets with custom template managed by Twig.",
+    "theme": true,
+    "require": {
+        "piwik": ">=2.13.0"
+    },
+    "authors": [
+        {
+            "name": "Luca Lancioni",
+            "email": "luca.lancioni@ideato.info",
+            "homepage": "http:\/\/www.ideato.com"
+        },
+        {
+            "name": "Matteo Parrucci",
+            "email": "m.parrucci@unibo.it",
+            "homepage": "http:\/\/www.unibo.it"
+        }
+    ]
+}

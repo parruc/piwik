@@ -1,0 +1,204 @@
+{
+    "overridableProperties": [
+        "show_goals",
+        "show_exclude_low_population",
+        "show_flatten_table",
+        "show_pivot_by_subtable",
+        "show_table",
+        "show_table_all_columns",
+        "show_footer",
+        "show_footer_icons",
+        "show_all_views_icons",
+        "show_active_view_icon",
+        "show_related_reports",
+        "show_limit_control",
+        "show_search",
+        "enable_sort",
+        "show_bar_chart",
+        "show_pie_chart",
+        "show_tag_cloud",
+        "show_export_as_rss_feed",
+        "show_ecommerce",
+        "search_recursive",
+        "show_export_as_image_icon",
+        "show_pagination_control",
+        "show_offset_information",
+        "hide_annotations_view",
+        "export_limit",
+        "show_all_ticks",
+        "show_series_picker",
+        "x_axis_step_size"
+    ],
+    "filter_sort_column": "nb_visits",
+    "filter_sort_order": "desc",
+    "filter_limit": 10,
+    "flat": false,
+    "expanded": false,
+    "filter_offset": 0,
+    "filter_pattern": false,
+    "filter_column": false,
+    "filter_excludelowpop": false,
+    "filter_excludelowpop_value": false,
+    "request_parameters_to_modify": {
+        "filter_limit": false,
+        "filter_truncate": 5,
+        "disable_queued_filters": 1,
+        "format_metrics": 1
+    },
+    "disable_generic_filters": false,
+    "disable_queued_filters": false,
+    "apiMethodToRequestDataTable": "Referrers.getReferrerType",
+    "idSubtable": 0,
+    "pivotBy": false,
+    "pivotByColumn": false,
+    "pivotByColumnLimit": false,
+    "external_series_toggle": false,
+    "external_series_toggle_show_all": false,
+    "x_axis_step_size": 2,
+    "allow_multi_select_series_picker": false,
+    "max_graph_elements": 6,
+    "selectable_columns": [
+        {
+            "column": "nb_visits",
+            "translation": "Visits",
+            "displayed": true
+        }
+    ],
+    "row_picker_match_rows_by": false,
+    "rows_to_display": false,
+    "selectable_rows": [],
+    "show_all_ticks": true,
+    "add_total_row": false,
+    "show_series_picker": false,
+    "display_percentage_in_tooltip": true,
+    "clientSideProperties": [
+        "show_limit_control",
+        "pivot_by_dimension",
+        "pivot_by_column",
+        "pivot_dimension_name",
+        "show_series_picker",
+        "allow_multi_select_series_picker",
+        "selectable_columns",
+        "selectable_rows",
+        "display_percentage_in_tooltip",
+        "external_series_toggle",
+        "external_series_toggle_show_all"
+    ],
+    "footer_icons": [
+        {
+            "class": "tableAllColumnsSwitch",
+            "buttons": [
+                {
+                    "id": "table",
+                    "title": "Display simple table",
+                    "icon": "plugins/Morpheus/images/table.png"
+                },
+                {
+                    "id": "tableAllColumns",
+                    "title": "Display a table with Visitor engagement metrics",
+                    "icon": "plugins/Morpheus/images/table_more.png"
+                },
+                {
+                    "id": "tableGoals",
+                    "title": "Display a table with Goals metrics",
+                    "icon": "plugins/Morpheus/images/goal.png"
+                }
+            ]
+        },
+        {
+            "class": "tableInsightViews",
+            "buttons": [
+                {
+                    "id": "insightsVisualization",
+                    "title": "Insights",
+                    "icon": "plugins/Insights/images/idea.png"
+                }
+            ]
+        },
+        {
+            "class": "tableGraphViews tableGraphCollapsed",
+            "buttons": [
+                {
+                    "id": "graphVerticalBar",
+                    "title": "Vertical bar graph",
+                    "icon": "plugins/Morpheus/images/chart_bar.png"
+                },
+                {
+                    "id": "graphPie",
+                    "title": "Piechart",
+                    "icon": "plugins/Morpheus/images/chart_pie.png"
+                },
+                {
+                    "id": "cloud",
+                    "title": "Tag Cloud",
+                    "icon": "plugins/Morpheus/images/tagcloud.png"
+                }
+            ]
+        }
+    ],
+    "show_visualization_only": false,
+    "show_goals": true,
+    "show_insights": true,
+    "translations": {
+        "nb_visits": "Visits",
+        "nb_uniq_visitors": "Unique visitors",
+        "nb_actions": "Actions",
+        "nb_users": "Users",
+        "nb_actions_per_visit": "Actions per Visit",
+        "avg_time_on_site": "Avg. Time on Website",
+        "bounce_rate": "Bounce Rate",
+        "conversion_rate": "Conversion Rate",
+        "label": "Referrer Type",
+        "nb_conversions": "Conversions",
+        "revenue": "Total Revenue"
+    },
+    "show_exclude_low_population": false,
+    "show_flatten_table": true,
+    "show_pivot_by_subtable": false,
+    "pivot_by_dimension": false,
+    "pivot_by_column": "",
+    "pivot_dimension_name": false,
+    "show_table": true,
+    "show_table_all_columns": true,
+    "show_footer": true,
+    "show_footer_icons": false,
+    "columns_to_display": [
+        "nb_visits"
+    ],
+    "show_all_views_icons": true,
+    "show_active_view_icon": true,
+    "related_reports": [],
+    "related_reports_title": "Related reports:",
+    "title": "",
+    "show_related_reports": true,
+    "documentation": false,
+    "custom_parameters": {
+        "viewDataTable": "graphPie"
+    },
+    "show_limit_control": false,
+    "show_search": false,
+    "enable_sort": true,
+    "show_bar_chart": true,
+    "show_pie_chart": true,
+    "show_tag_cloud": true,
+    "show_export_as_rss_feed": true,
+    "show_ecommerce": false,
+    "show_footer_message": false,
+    "metrics_documentation": [],
+    "tooltip_metadata_name": false,
+    "self_url": "?module=SWDReferrers&action=getReferrersPieGraph&idSite=14302&token_auth=824b153a7cf5042c19fd5a50a7ece8f0&period=day&date=2015-02-28",
+    "datatable_css_class": false,
+    "datatable_js_type": "JqplotPieGraphDataTable",
+    "search_recursive": false,
+    "y_axis_unit": "",
+    "show_export_as_image_icon": true,
+    "filters": [],
+    "subtable_controller_action": "getReferrersPieGraph",
+    "show_pagination_control": false,
+    "show_offset_information": false,
+    "hide_annotations_view": true,
+    "export_limit": 100,
+    "report_id": "SWDReferrers.getReferrersPieGraph",
+    "controllerName": "SWDReferrers",
+    "controllerAction": "getReferrersPieGraph"
+}

@@ -1,0 +1,41 @@
+.dashboard-swd {
+
+    //import font icon
+    @import "font-awesome.less";
+
+
+  h1{
+    font-weight: normal;
+    color: #bb2e29;
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+  }
+
+    &#dashboard {
+        margin: 0px auto;
+        position: relative;
+    }
+    .widget {
+        margin: 10px 0;
+    }
+    .widgetContent {
+        padding: 5px;
+    }
+    .userCountryMapSelectMetrics
+    {
+        display: none;
+    }
+    .widgetTop {
+        cursor: default;
+    }
+    .dataTableRowActions .actionSegmentVisitorLog{
+        display: none;
+    }
+    .UserCountryMap .UserCountryMap-legend, .UserCountryMap .UserCountryMap-legend .content
+    {
+        opacity: 1 !important;
+        display: block !important;
+    }
+}
