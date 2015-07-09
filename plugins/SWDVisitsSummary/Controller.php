@@ -30,7 +30,7 @@ class Controller extends \Piwik\Plugins\VisitsSummary\Controller
         return $view->render();
     }
 
-    public function getEvolutionGraph(array $columns = array(), array $defaultColumns = array())
+    public function getEvolutionGraph(array $columns = array(), array $defaultColumns = array(), $callingAction = __FUNCTION__)
     {
         if (empty($columns)) {
             $columns = Common::getRequestVar('columns', false);
