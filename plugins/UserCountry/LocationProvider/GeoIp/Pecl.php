@@ -63,6 +63,9 @@ class Pecl extends GeoIp
             if (!empty($location)) {
                 $result[self::COUNTRY_CODE_KEY] = $location['country_code'];
                 $result[self::REGION_CODE_KEY] = $location['region'];
+                if ($location['region'] == "18" && $location['city'] == "Milan") {
+                    $result[self::REGION_CODE_KEY] = "09";
+                }
                 $result[self::CITY_NAME_KEY] = utf8_encode($location['city']);
                 $result[self::AREA_CODE_KEY] = $location['area_code'];
                 $result[self::LATITUDE_KEY] = $location['latitude'];
