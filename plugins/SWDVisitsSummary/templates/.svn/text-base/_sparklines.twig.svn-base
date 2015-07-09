@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="sparkline">
+            {{ sparkline(urlSparklineNbVisits)|raw }}
+            {{ 'General_NVisits'|translate("<strong>"~nbVisits~"</strong>")|raw }}{% if displayUniqueVisitors %},
+                {{ 'VisitsSummary_NbUniqueVisitors'|translate("<strong>"~nbUniqVisitors~"</strong>")|raw }}{% endif %}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="sparkline">
+            {{ sparkline(urlSparklineNbPageviews)|raw }}
+            {{ 'VisitsSummary_NbPageviewsDescription'|translate("<strong>"~nbPageviews~"</strong>")|trim|raw }},
+            {{ 'VisitsSummary_NbUniquePageviewsDescription'|translate("<strong>"~nbUniquePageviews~"</strong>")|raw }}
+        </div>
+    </div>
+    <div class="sparkline  col-md-12">
+        {{ postEvent('Template.VisitsSummaryOverviewSparklines') }}
+    </div>
+</div>
+
+{% include "_sparklineFooter.twig" %}
+
